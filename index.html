@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Battle — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Sea Battle — Demo</h1>
+    <div class="controls">
+      <button id="btn-new">New Game</button>
+      <button id="btn-autoplace">Auto-place My Ships</button>
+      <button id="btn-save">Save</button>
+      <button id="btn-clear">Clear Save</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Your Board</h2>
+      <div id="player-board" class="board" aria-label="Your grid"></div>
+      <div class="legend">
+        <span class="legend-item water">~</span> water
+        <span class="legend-item ship">■</span> ship
+        <span class="legend-item hit">✕</span> hit
+        <span class="legend-item miss">•</span> miss
+      </div>
+      <div class="stats">
+        <div>Hits: <span id="p-hits">0</span></div>
+        <div>Misses: <span id="p-miss">0</span></div>
+        <div>Ships sunk: <span id="p-sunk">0</span>/5</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Enemy Board</h2>
+      <p class="hint">Click cells on the enemy board to fire. You shoot again if you hit.</p>
+      <div id="ai-board" class="board enemy" aria-label="Enemy grid"></div>
+      <div class="stats">
+        <div>AI Hits: <span id="ai-hits">0</span></div>
+        <div>AI Misses: <span id="ai-miss">0</span></div>
+        <div>AI Ships sunk: <span id="ai-sunk">0</span>/5</div>
+      </div>
+    </section>
+  </main>
+
+  <section class="ships">
+    <h3>Ships to place (optional)</h3>
+    <p>You can auto-place, or drag these onto your board. Click a ship to rotate before dragging.</p>
+    <div id="ship-palette" class="palette"></div>
+  </section>
+
+  <dialog id="end-dialog">
+    <h2 id="end-title"></h2>
+    <p id="end-summary"></p>
+    <div class="dialog-actions">
+      <button id="btn-restart">Play Again</button>
+      <button id="btn-close">Close</button>
+    </div>
+  </dialog>
+
+  <footer class="foot">
+    <small>Demo by kachowska — static, GitHub Pages ready.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
