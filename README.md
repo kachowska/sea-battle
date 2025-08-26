@@ -107,15 +107,7 @@ Use the provided workflow in `.github/workflows/gh-pages.yml` (already included)
 
 ## 📝 License
 
-MIT — or your preferred license. If you add a different `LICENSE` file, update this section to match.
+MIT
 
 ---
 
-## 🇵🇱 Krótko po polsku
-
-Prosta gra **Statki** w przeglądarce. Wejdź w **Live Demo** i graj — bez instalacji.  
-- Rozmieszczanie: przeciągnij, obróć kliknięciem lub użyj **Auto‑place**.  
-- Walka: strzelaj w planszę przeciwnika, masz **dodatkowy ruch po trafieniu**.  
-- Stan gry zapisuje się w **localStorage**.
-
-Miłej zabawy! 🎯
